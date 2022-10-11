@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 
 
 
-export const usuarioUpdate = () => {
+export const UsuarioUpdate = () => {
 
   const {usuarioId = ''} = useParams();
   console.log(usuarioId);

@@ -6,11 +6,11 @@ import { UsuarioView } from './components/usuario/UsuarioView';
 import { MarcaView } from './components/marca/MarcaView';
 import { EstadoView } from './components/estado/EstadoView';
 import { TipoView } from './components/tipo/TipoView';
-import { inventarioUpdate } from './components/inventario/inventarioUpdate';
-import { usuarioUpdate } from './components/usuario/usuarioUpdate';
-import { estadoUpdate } from './components/estado/estadoUpdate';
-import { tipoUpdate } from './components/tipo/tipoUpdate';
-import { marcaUpdate } from './components/marca/marcaUpdate';
+import { InventarioUpdate } from './components/inventario/inventarioUpdate';
+import { UsuarioUpdate } from './components/usuario/usuarioUpdate';
+import { EstadoUpdate } from './components/estado/estadoUpdate';
+import { TipoUpdate } from './components/tipo/tipoUpdate';
+import { MarcaUpdate } from './components/marca/marcaUpdate';
 
 const InventarioApp = () => {
     return <Router>
@@ -21,11 +21,11 @@ const InventarioApp = () => {
           <Route exact path="/marcas" component={MarcaView} />
           <Route exact path="/estados" component={EstadoView} />
           <Route exact path="/tipos" component={TipoView} />
-          <Route exact path="/inventario/edit/:inventarioId" component={inventarioUpdate} />
-          <Route exact path="/usuario/edit/:usuarioId" component={usuarioUpdate} />
-          <Route exact path="/estado-equipo/edit/:estadoId" component={estadoUpdate} />
-          <Route exact path="/tipo-equipo/edit/:tipoId" component={tipoUpdate} />
-          <Route exact path="/marca/edit/:marcaId" component={marcaUpdate} />
+          <Route exact path="/inventario/edit/:inventarioId" component={InventarioUpdate} />
+          <Route exact path="/usuario/edit/:usuarioId" component={UsuarioUpdate} />
+          <Route exact path="/estado-equipo/edit/:estadoId" component={EstadoUpdate} />
+          <Route exact path="/tipo-equipo/edit/:tipoId" component={TipoUpdate} />
+          <Route exact path="/marca/edit/:marcaId" component={MarcaUpdate} />
           <Redirect to="/" />
         </Switch>
     </Router>   

@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 
 
 
-export const estadoUpdate = () => {
+export const EstadoUpdate = () => {
 
   const {estadoId = ''} = useParams();
   console.log(estadoId);

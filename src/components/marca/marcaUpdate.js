@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 
 
 
-export const marcaUpdate = () => {
+export const MarcaUpdate = () => {
 
   const {marcaId = ''} = useParams();
   console.log(marcaId);

@@ -7,7 +7,7 @@ import { getTipoEquipos } from '../../services/tipoEquipoService';
 import { getEstadoEquipos } from '../../services/estadoEquipoService';
 import Swal from 'sweetalert2';
 
-export const inventarioUpdate = () => {
+export const InventarioUpdate = () => {
 
   const {inventarioId = ''} = useParams();
   console.log(inventarioId);

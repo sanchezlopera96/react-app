@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 
 
 
-export const tipoUpdate = () => {
+export const TipoUpdate = () => {
 
   const {tipoId = ''} = useParams();
   console.log(tipoId);
